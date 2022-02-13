@@ -1,10 +1,10 @@
 public class Vector3 {
 
-    private int x;
-    private int y;
-    private int z;
+    private double x;
+    private double y;
+    private double z;
 
-    public Vector3(int x, int y, int z) {
+    public Vector3(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -18,25 +18,25 @@ public class Vector3 {
         return vector;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
-    public int getZ() {
+    public double getZ() {
         return z;
     }
 
-    public void setX(int value) {
+    public void setX(double value) {
         x = value;
     }
-    public void setY(int value) {
+    public void setY(double value) {
         y = value;
     }
-    public void setZ(int value) {
+    public void setZ(double value) {
         z = value;
     }
 
