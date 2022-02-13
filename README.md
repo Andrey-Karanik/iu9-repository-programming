@@ -1,3 +1,3 @@
 # iu9-repository-programming
 
->labs
+__Лабораторная работа 2:__
