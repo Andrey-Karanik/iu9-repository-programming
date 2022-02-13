@@ -1,26 +1,30 @@
 public class VectorN {
 
-    private final int[] coordinates;
+    private final double[] coordinates;
 
-    public VectorN(int ... x) {
+    public VectorN(double ... x) {
         coordinates = x;
     }
 
-    public int multiply(VectorN vectorN) {
+    public static int getScalarProduct(VectorN vector1, VectorN vector2) {
         int sum = 0;
 
-        for (int i = 0; i < coordinates.length; i++) {
-            sum += coordinates[i] * vectorN.getX(i);
+        for (int i = 0; i < vector1.getN(); i++) {
+            sum += vector1.getX(i) * vector2.getX(i);
         }
 
         return sum;
     }
 
-    public int getX(int i) {
+    public int getN() {
+        return coordinates.length;
+    }
+
+    public double getX(int i) {
         return coordinates[i];
     }
 
-    public void setX(int i, int value) {
+    public void setX(int i, double value) {
         coordinates[i] = value;
     }
 
