@@ -10,11 +10,11 @@ public class Vector3 {
         this.z = z;
     }
 
-    public Vector3 multiply(Vector3 vector3) {
+    public static Vector3 getVectorProduct(Vector3 vector1, Vector3 vector2) {
         Vector3 vector = new Vector3(0, 0, 0);
-        vector.setX(y * vector3.getZ() - vector3.getY() * z);
-        vector.setY(-(x * vector3.getZ() - vector3.getX() * z));
-        vector.setZ(x * vector3.getY() - vector3.getX() * y);
+        vector.setX(vector1.getY() * vector2.getZ() - vector2.getY() * vector1.getZ());
+        vector.setY(-(vector1.getX() * vector2.getZ() - vector2.getX() * vector1.getZ()));
+        vector.setZ(vector1.getX() * vector2.getY() - vector2.getX() * vector1.getY());
         return vector;
     }
 

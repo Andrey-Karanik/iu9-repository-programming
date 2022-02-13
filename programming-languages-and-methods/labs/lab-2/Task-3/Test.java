@@ -4,6 +4,6 @@ public class Test {
         Vector3 vector2 = new Vector3(3, -5, 5);
         System.out.println(vector1);
         System.out.println(vector2);
-        System.out.println(vector1.multiply(vector2));
+        System.out.println(Vector3.getVectorProduct(vector1, vector2));
     }
 }
