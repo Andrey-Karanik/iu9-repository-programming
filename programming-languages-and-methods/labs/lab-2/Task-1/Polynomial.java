@@ -2,7 +2,7 @@ import java.lang.Math;
 
 public class Polynomial {
 
-    private int[] k;
+    private final int[] k;
 
     public Polynomial(int ... k) {
         this.k = k;
@@ -17,7 +17,6 @@ public class Polynomial {
     }
 
     private String getPrettyText(int value, int index) {
-
         String str = "";
 
         if (value != 0) {
@@ -40,21 +39,21 @@ public class Polynomial {
     }
 
     public String toString() {
-        String str = "";
+        StringBuilder str = new StringBuilder();
 
         for (int i = 0; i < k.length-2; i++) {
-            str += getPrettyText(k[i], i);
+            str.append(getPrettyText(k[i], i));
         }
 
         if (k.length > 1) {
-            str += getPrettyText(k[k.length-2], k.length-2);
+            str.append(getPrettyText(k[k.length - 2], k.length - 2));
         }
 
         if (k[k.length-1] != 0) {
-            str += k[k.length - 1] > 0 ? " + " : " - ";
-            str += Math.abs(k[k.length - 1]);
+            str.append(k[k.length - 1] > 0 ? " + " : " - ");
+            str.append(Math.abs(k[k.length - 1]));
         }
 
-        return str;
+        return str.toString();
     }
 }
