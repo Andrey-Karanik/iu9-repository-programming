@@ -6,7 +6,7 @@ public class VectorN {
         coordinates = x;
     }
 
-    public int multiplyByScalar(VectorN vectorN) {
+    public int multiply(VectorN vectorN) {
         int sum = 0;
 
         for (int i = 0; i < coordinates.length; i++) {
