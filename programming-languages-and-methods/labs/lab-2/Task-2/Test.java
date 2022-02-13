@@ -8,7 +8,7 @@ public class Test {
         System.out.println(vector2.toString());
         System.out.println(vector3.toString());
         System.out.println(vector4.toString());
-        System.out.println(vector1.multiplyByScalar(vector2));
-        System.out.println(vector3.multiplyByScalar(vector4));
+        System.out.println(vector1.multiply(vector2));
+        System.out.println(vector3.multiply(vector4));
     }
 }
