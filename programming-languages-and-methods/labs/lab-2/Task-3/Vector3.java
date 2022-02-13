@@ -41,7 +41,6 @@ public class Vector3 {
     }
 
     public String toString() {
-
         return "{" + "x: " + x + ", " + "y: " + y + ", " + "z: " + z + "}";
     }
 }
