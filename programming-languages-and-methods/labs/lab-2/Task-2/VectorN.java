@@ -6,8 +6,8 @@ public class VectorN {
         coordinates = x;
     }
 
-    public static int getScalarProduct(VectorN vector1, VectorN vector2) {
-        int sum = 0;
+    public static double getScalarProduct(VectorN vector1, VectorN vector2) {
+        double sum = 0;
 
         for (int i = 0; i < vector1.getN(); i++) {
             sum += vector1.getX(i) * vector2.getX(i);
