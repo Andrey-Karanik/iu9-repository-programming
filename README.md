@@ -1,4 +1,3 @@
 # iu9-repository-programming
 
-__пусто__
-:-)
+__пусто :)__
