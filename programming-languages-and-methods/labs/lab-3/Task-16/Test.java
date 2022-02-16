@@ -5,7 +5,7 @@ public class Test {
         Triangle[] triangles = new Triangle[] {
                 new Triangle(3, 4, 5),
                 new Triangle(2, 7, 8),
-                new Triangle(4, 1, 4)
+                new Triangle(4, 1, 4),
         };
         Arrays.sort(triangles);
         for (Triangle triangle : triangles) {
