@@ -1,4 +1,4 @@
-public class Main {
+public class Test {
     public static void main(String[] args) {
         CircularBuffer circularBuffer = new CircularBuffer(5);
         circularBuffer.put(11);
