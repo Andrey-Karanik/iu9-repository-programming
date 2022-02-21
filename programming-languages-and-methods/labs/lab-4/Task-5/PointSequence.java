@@ -13,6 +13,10 @@ public class PointSequence implements Iterable<Double> {
     }
 
     public void set(int index, int x, int y, int z) {
+        if (index >= points.length) {
+            throw new ArrayIndexOutOfBoundsException("You are out of sequence. Your index: " + index +
+                    ". Your sequence length: " + points.length);
+        }
         points[index].setX(x);
         points[index].setY(y);
         points[index].setZ(z);
